@@ -14,6 +14,10 @@
 		A58F55F42935FEC500DB147B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58F55F32935FEC500DB147B /* Assets.xcassets */; };
 		A58F55F72935FEC500DB147B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58F55F52935FEC500DB147B /* LaunchScreen.storyboard */; };
 		A58F56042936009F00DB147B /* Cook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F56032936009F00DB147B /* Cook.swift */; };
+		A59D0A622936ADF900F2EF96 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A612936ADF900F2EF96 /* Dish.swift */; };
+		A59D0A642936B03500F2EF96 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A632936B03500F2EF96 /* Position.swift */; };
+		A59D0A662936B1B900F2EF96 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A652936B1B900F2EF96 /* Ingredient.swift */; };
+		A59D0A682936B69F00F2EF96 /* Cuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A672936B69F00F2EF96 /* Cuisine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A58F55F62935FEC500DB147B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A58F55F82935FEC500DB147B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A58F56032936009F00DB147B /* Cook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cook.swift; sourceTree = "<group>"; };
+		A59D0A612936ADF900F2EF96 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		A59D0A632936B03500F2EF96 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		A59D0A652936B1B900F2EF96 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		A59D0A672936B69F00F2EF96 /* Cuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cuisine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				A58F56032936009F00DB147B /* Cook.swift */,
+				A59D0A672936B69F00F2EF96 /* Cuisine.swift */,
+				A59D0A612936ADF900F2EF96 /* Dish.swift */,
+				A59D0A632936B03500F2EF96 /* Position.swift */,
+				A59D0A652936B1B900F2EF96 /* Ingredient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,7 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59D0A682936B69F00F2EF96 /* Cuisine.swift in Sources */,
 				A58F55EF2935FEC100DB147B /* ViewController.swift in Sources */,
+				A59D0A622936ADF900F2EF96 /* Dish.swift in Sources */,
+				A59D0A662936B1B900F2EF96 /* Ingredient.swift in Sources */,
+				A59D0A642936B03500F2EF96 /* Position.swift in Sources */,
 				A58F56042936009F00DB147B /* Cook.swift in Sources */,
 				A58F55EB2935FEC100DB147B /* AppDelegate.swift in Sources */,
 				A58F55ED2935FEC100DB147B /* SceneDelegate.swift in Sources */,
