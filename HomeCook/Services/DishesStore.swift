@@ -7,7 +7,7 @@ class DishesStore {
     
     let dishes: [String: [Ingredient]] = [
         "Паста карбонара": [
-            Ingredient(title: spaghetti.title, price: spaghetti.price),
+            Ingredient(title: spaghetti.0, price: spaghetti.1),
             Ingredient(title: ham.0, price: ham.1),
             Ingredient(title: eggs.0, price: eggs.1),
             Ingredient(title: cheese.0, price: cheese.1),
@@ -20,7 +20,7 @@ class DishesStore {
             Ingredient(title: cheese.0, price: cheese.1),
         ],
         "Паста феттучини": [
-            Ingredient(title: spaghetti.title, price: spaghetti.price),
+            Ingredient(title: spaghetti.0, price: spaghetti.1),
             Ingredient(title: ham.0, price: ham.1),
             Ingredient(title: cream.0, price: cream.1),
             Ingredient(title: cheese.0, price: cheese.1)
@@ -72,7 +72,7 @@ class DishesStore {
     private init() {}
 }
 
-let spaghetti = (title: "Спагетти", price: 5)
+let spaghetti = ("Спагетти", 5)
 let ham = ("Ветчина", 14)
 let eggs = ("Яйца", 7)
 let cheese = ("Сыр", 10)
