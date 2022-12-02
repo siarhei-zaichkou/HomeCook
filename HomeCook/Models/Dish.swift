@@ -1,7 +1,4 @@
 
-import Foundation
-
-
 struct Dish {
     let title: String
     let ingredients: [Ingredient]

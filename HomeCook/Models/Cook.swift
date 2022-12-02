@@ -1,7 +1,4 @@
 
-import Foundation
-
-
 struct Cook {
     let name: String
     let surname: String
