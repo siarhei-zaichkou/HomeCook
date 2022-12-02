@@ -1,7 +1,4 @@
 
-import Foundation
-
-
 struct Position {
     let dish: Dish
     var count: Double

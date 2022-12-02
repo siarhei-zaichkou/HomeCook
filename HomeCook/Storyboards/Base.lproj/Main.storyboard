@@ -1,31 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LES-84-Maw">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Cook-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CuisineViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-3u-UZs">
+                                <rect key="frame" x="16" y="120" width="288" height="152"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать в наш ресторан у Вас дома! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnA-xH-WI7" userLabel="Добро пожаловать в наш ресторан у Вас дома!">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="20"/>
+                                        <color key="textColor" name="SubtitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Наш профессиональный шеф-повар приготовит вашу любимую еду у Вас дома. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIg-pe-Ljr">
+                                        <rect key="frame" x="0.0" y="59" width="288" height="47.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите, блюдо какой кухни хотите  попробовать." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTi-hB-YDu">
+                                        <rect key="frame" x="0.0" y="111.5" width="288" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                        <color key="textColor" name="SubtitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-kh-ExB">
+                                <rect key="frame" x="16" y="292" width="288" height="121"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-Tu-Npb">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="121"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2uI-tu-N8u">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2uI-tu-N8u" secondAttribute="height" multiplier="157:103" id="dX0-Q1-0fN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-9c-F5F">
+                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="15s-jU-Vpw" kind="show" id="4Fm-2V-8pX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwj-O0-x5n">
+                                        <rect key="frame" x="154" y="0.0" width="134" height="121"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-sK-iMr">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3DP-sK-iMr" secondAttribute="height" multiplier="157:103" id="ako-6I-VMt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-hJ-ebZ">
+                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-y8-Er9">
+                                <rect key="frame" x="16" y="433" width="288" height="119"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-9z-zzP">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pje-EC-5Jb">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Pje-EC-5Jb" secondAttribute="height" multiplier="157:103" id="u7n-F2-Mul"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXf-oI-iwH">
+                                                <rect key="frame" x="0.0" y="86" width="131" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-Cg-oEd">
+                                        <rect key="frame" x="157" y="0.0" width="131" height="119"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29A-xh-G4D">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="29A-xh-G4D" secondAttribute="height" multiplier="157:103" id="IeS-t2-Bn0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1N-E0-0fT">
+                                                <rect key="frame" x="0.0" y="86" width="131" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Yf-kh-ExB" firstAttribute="top" secondItem="hWI-3u-UZs" secondAttribute="bottom" constant="20" id="A68-BM-iLN"/>
+                            <constraint firstItem="hWI-3u-UZs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G18-aB-mVt"/>
+                            <constraint firstItem="hWI-3u-UZs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OUH-KN-KBH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tiO-y8-Er9" secondAttribute="trailing" constant="16" id="ZpZ-e3-Ho7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Yf-kh-ExB" secondAttribute="trailing" constant="16" id="dQQ-Z0-ApZ"/>
+                            <constraint firstItem="tiO-y8-Er9" firstAttribute="top" secondItem="5Yf-kh-ExB" secondAttribute="bottom" constant="20" id="kEM-KF-KEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tiO-y8-Er9" secondAttribute="bottom" constant="16" id="ogY-a8-4Zi"/>
+                            <constraint firstItem="5Yf-kh-ExB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sHY-Y0-evw"/>
+                            <constraint firstItem="tiO-y8-Er9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vjC-Us-Zut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hWI-3u-UZs" secondAttribute="trailing" constant="16" id="vm4-7x-CRL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Home Cook" id="SS9-t3-c8X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9118.125" y="52.816901408450704"/>
+        </scene>
+        <!--Home Cook-->
+        <scene sceneID="0te-vo-gJw">
+            <objects>
+                <viewController id="15s-jU-Vpw" customClass="DishesViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugS-Gm-fXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-RB-9OD">
+                                <rect key="frame" x="16" y="168" width="288" height="384"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-eQ-HEG">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0ar-eQ-HEG" secondAttribute="height" multiplier="150:100" id="2CK-Vu-7Yx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
+                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="TextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
+                                        <rect key="frame" x="0.0" y="138" width="288" height="108"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-zI-Kl3">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9ex-zI-Kl3" secondAttribute="height" multiplier="150:100" id="eQh-0X-MLI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
+                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="TextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
+                                        <rect key="frame" x="0.0" y="276" width="288" height="108"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-xF-pUL">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="u2p-xF-pUL" secondAttribute="height" multiplier="150:100" id="ECv-W6-yME"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
+                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="TextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите желаемое блюдо" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqW-DD-GTy">
+                                <rect key="frame" x="16" y="130" width="288" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="SubtitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ug-Gw-gME"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2W8-RB-9OD" firstAttribute="top" secondItem="qqW-DD-GTy" secondAttribute="bottom" constant="20" id="3Vg-KR-ga4"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2W8-RB-9OD" secondAttribute="bottom" constant="16" id="Mfp-cQ-hel"/>
+                            <constraint firstItem="qqW-DD-GTy" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="UQb-O9-lWJ"/>
+                            <constraint firstItem="2W8-RB-9OD" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="Xwd-Zk-JOe"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="qqW-DD-GTy" secondAttribute="trailing" constant="16" id="eVk-ei-5So"/>
+                            <constraint firstItem="qqW-DD-GTy" firstAttribute="top" secondItem="1ug-Gw-gME" secondAttribute="top" constant="20" id="f4v-y9-jNB"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="2W8-RB-9OD" secondAttribute="trailing" constant="16" id="iM4-5F-aNZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home Cook" id="rpD-JK-dHo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syl-K5-Mmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10053.75" y="53.87323943661972"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2md-d4-bRi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LES-84-Maw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mcr-MY-qxD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="30"/>
+                            <color key="textColor" name="TitleColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bVQ-Qz-wxC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60Q-Ur-qcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8203.125" y="53.87323943661972"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="FirstButtonColor">
+            <color red="0.71799999475479126" green="0.18000000715255737" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SubtitleColor">
+            <color red="0.6940000057220459" green="0.39599999785423279" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.55299997329711914" green="0.54100000858306885" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.57599997520446777" green="0.13699999451637268" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
