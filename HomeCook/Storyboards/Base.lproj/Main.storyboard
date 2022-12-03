@@ -166,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="9118.125" y="52.816901408450704"/>
         </scene>
-        <!--Home Cook-->
+        <!--Dishes View Controller-->
         <scene sceneID="0te-vo-gJw">
             <objects>
                 <viewController storyboardIdentifier="DishesVC" id="15s-jU-Vpw" customClass="DishesViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -256,7 +256,9 @@
                             <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="2W8-RB-9OD" secondAttribute="trailing" constant="16" id="iM4-5F-aNZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Cook" id="rpD-JK-dHo"/>
+                    <navigationItem key="navigationItem" id="rpD-JK-dHo">
+                        <barButtonItem key="backBarButtonItem" title="Все кухни" id="yjG-Ge-cPV"/>
+                    </navigationItem>
                     <connections>
                         <outletCollection property="dishButtons" destination="NwK-4W-CeZ" collectionClass="NSMutableArray" id="a9X-IQ-DfW"/>
                         <outletCollection property="dishButtons" destination="4sh-pP-Ee1" collectionClass="NSMutableArray" id="PyE-pK-qtU"/>
