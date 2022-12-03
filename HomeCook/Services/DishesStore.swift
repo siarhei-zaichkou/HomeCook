@@ -3,7 +3,7 @@ class DishesStore {
     static let shared = DishesStore()
     
     let dishes: [[String: Cuisine] : [Ingredient]] = [
-        ["Паста карбонара": .Italy]:
+        ["Паста карбонара": .italy]:
             [
                 Ingredient(title: spaghetti.0, price: spaghetti.1),
                 Ingredient(title: ham.0, price: ham.1),
@@ -11,21 +11,21 @@ class DishesStore {
                 Ingredient(title: cheese.0, price: cheese.1),
                 Ingredient(title: cream.0, price: cream.1),
             ],
-        ["Лазанья с ветчиной": .Italy]:
+        ["Лазанья с ветчиной": .italy]:
             [
                 Ingredient(title: ham.0, price: ham.1),
                 Ingredient(title: cream.0, price: cream.1),
                 Ingredient(title: lasagnaSheets.0, price: lasagnaSheets.1),
                 Ingredient(title: cheese.0, price: cheese.1),
             ],
-        ["Паста феттучини": .Italy]:
+        ["Паста феттучини": .italy]:
             [
                 Ingredient(title: spaghetti.0, price: spaghetti.1),
                 Ingredient(title: ham.0, price: ham.1),
                 Ingredient(title: cream.0, price: cream.1),
                 Ingredient(title: cheese.0, price: cheese.1)
             ],
-        ["Голубцы": .Russia]:
+        ["Голубцы": .russia]:
             [
                 Ingredient(title: pork.0, price: pork.1),
                 Ingredient(title: cabbage.0, price: cabbage.1),
@@ -33,7 +33,7 @@ class DishesStore {
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Жаркое в горшочке": .Russia]:
+        ["Жаркое в горшочке": .russia]:
             [
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: pork.0, price: pork.1),
@@ -41,32 +41,32 @@ class DishesStore {
                 Ingredient(title: cheese.0, price: cheese.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Свинина с картофелем запеченная": .Russia]:
+        ["Свинина с картофелем запеченная": .russia]:
             [
                 Ingredient(title: garlic.0, price: garlic.1),
                 Ingredient(title: potatoes.0, price: potatoes.1),
                 Ingredient(title: pork.0, price: pork.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Стейк из мраморной говядины": .USA]:
+        ["Стейк из мраморной говядины": .usa]:
             [
                 Ingredient(title: butter.0, price: butter.1),
                 Ingredient(title: beef.0, price: beef.1)
             ],
-        ["Говядина запеченая с овощами": .USA]:
+        ["Говядина запеченая с овощами": .usa]:
             [
                 Ingredient(title: tomatoes.0, price: tomatoes.1),
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: beef.0, price: beef.1),
                 Ingredient(title: carrot.0, price: carrot.1)
             ],
-        ["Тушеная говядина в пиве с луком": .USA]:
+        ["Тушеная говядина в пиве с луком": .usa]:
             [
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: beef.0, price: beef.1),
                 Ingredient(title: lightBeer.0, price: lightBeer.1)
             ],
-        ["Хинкали": .Georgia]:
+        ["Хинкали": .georgia]:
             [
                 Ingredient(title: flour.0, price: flour.1),
                 Ingredient(title: lamb.0, price: lamb.1),
@@ -74,7 +74,7 @@ class DishesStore {
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: garlic.0, price: garlic.1),
             ],
-        ["Долма с бараниной": .Georgia]:
+        ["Долма с бараниной": .georgia]:
             [
                 Ingredient(title: lamb.0, price: lamb.1),
                 Ingredient(title: rice.0, price: rice.1),
@@ -82,7 +82,7 @@ class DishesStore {
                 Ingredient(title: garlic.0, price: garlic.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Чакапули": .Georgia]:
+        ["Чакапули": .georgia]:
             [
                 Ingredient(title: lamb.0, price: lamb.1),
                 Ingredient(title: greenOnion.0, price: greenOnion.1),

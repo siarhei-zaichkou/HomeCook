@@ -28,6 +28,9 @@ extension Dish {
     }
 }
 
-enum Cuisine {
-    case USA, Russia, Georgia, Italy
+enum Cuisine: String, CaseIterable {
+    case italy = "Итальянская"
+    case russia = "Русская"
+    case usa = "Американская"
+    case georgia = "Грузинская"
 }
