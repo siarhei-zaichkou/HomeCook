@@ -19,7 +19,6 @@
 		A59D0A622936ADF900F2EF96 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A612936ADF900F2EF96 /* Dish.swift */; };
 		A59D0A642936B03500F2EF96 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A632936B03500F2EF96 /* Position.swift */; };
 		A59D0A662936B1B900F2EF96 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A652936B1B900F2EF96 /* Ingredient.swift */; };
-		A59D0A682936B69F00F2EF96 /* Cuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D0A672936B69F00F2EF96 /* Cuisine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		A59D0A612936ADF900F2EF96 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		A59D0A632936B03500F2EF96 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		A59D0A652936B1B900F2EF96 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		A59D0A672936B69F00F2EF96 /* Cuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cuisine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				A58F56032936009F00DB147B /* Cook.swift */,
-				A59D0A672936B69F00F2EF96 /* Cuisine.swift */,
 				A59D0A612936ADF900F2EF96 /* Dish.swift */,
 				A59D0A632936B03500F2EF96 /* Position.swift */,
 				A59D0A652936B1B900F2EF96 /* Ingredient.swift */,
@@ -207,7 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59D0A682936B69F00F2EF96 /* Cuisine.swift in Sources */,
 				07ADD569293A2B840072D60B /* DishesViewController.swift in Sources */,
 				A58F55EF2935FEC100DB147B /* CuisineViewController.swift in Sources */,
 				A572CC67293B6BF000545FBE /* DishesStore.swift in Sources */,
