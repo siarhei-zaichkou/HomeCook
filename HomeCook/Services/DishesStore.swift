@@ -1,72 +1,95 @@
 
-import Foundation
-
-
 class DishesStore {
     static let shared = DishesStore()
     
-    let dishes: [String: [Ingredient]] = [
-        "Паста карбонара": [
-            Ingredient(title: spaghetti.0, price: spaghetti.1),
-            Ingredient(title: ham.0, price: ham.1),
-            Ingredient(title: eggs.0, price: eggs.1),
-            Ingredient(title: cheese.0, price: cheese.1),
-            Ingredient(title: cream.0, price: cream.1),
-        ],
-        "Лазанья с ветчиной": [
-            Ingredient(title: ham.0, price: ham.1),
-            Ingredient(title: cream.0, price: cream.1),
-            Ingredient(title: lasagnaSheets.0, price: lasagnaSheets.1),
-            Ingredient(title: cheese.0, price: cheese.1),
-        ],
-        "Паста феттучини": [
-            Ingredient(title: spaghetti.0, price: spaghetti.1),
-            Ingredient(title: ham.0, price: ham.1),
-            Ingredient(title: cream.0, price: cream.1),
-            Ingredient(title: cheese.0, price: cheese.1)
-        ],
-        "Голубцы": [
-            Ingredient(title: pork.0, price: pork.1),
-            Ingredient(title: cabbage.0, price: cabbage.1),
-            Ingredient(title: rice.0, price: rice.1),
-            Ingredient(title: onion.0, price: onion.1),
-            Ingredient(title: sourCream.0, price: sourCream.1)
-        ],
-        "Жаркое в горшочке": [
-            Ingredient(title: onion.0, price: onion.1),
-            Ingredient(title: pork.0, price: pork.1),
-            Ingredient(title: potatoes.0, price: potatoes.1),
-            Ingredient(title: cheese.0, price: cheese.1),
-            Ingredient(title: sourCream.0, price: sourCream.1)
-        ],
-        "Свинина с картофелем запеченная": [
-            Ingredient(title: garlic.0, price: garlic.1),
-            Ingredient(title: potatoes.0, price: potatoes.1),
-            Ingredient(title: pork.0, price: pork.1),
-            Ingredient(title: sourCream.0, price: sourCream.1)
-        ],
-        "Стейк из мраморной говядины": [
-            Ingredient(title: butter.0, price: butter.1),
-            Ingredient(title: beef.0, price: beef.1)
-        ],
-        "Говядина запеченая с овощами": [
-            Ingredient(title: tomatoes.0, price: tomatoes.1),
-            Ingredient(title: onion.0, price: onion.1),
-            Ingredient(title: beef.0, price: beef.1),
-            Ingredient(title: carrot.0, price: carrot.1)
-        ],
-        "Тушеная говядина в пиве с луком": [
-            Ingredient(title: onion.0, price: onion.1),
-            Ingredient(title: beef.0, price: beef.1),
-            Ingredient(title: lightBeer.0, price: lightBeer.1)
-        ],
-        "Хинкали": [
-            Ingredient(title: flour.0, price: flour.1),
-            Ingredient(title: lamb.0, price: lamb.1),
-            Ingredient(title: salo.0, price: salo.1),
-            Ingredient(title: onion.0, price: onion.1),
-            Ingredient(title: garlic.0, price: garlic.1),
-        ]
+    let dishes: [[String: Cuisine] : [Ingredient]] = [
+        ["Паста карбонара": .Italy]:
+            [
+                Ingredient(title: spaghetti.0, price: spaghetti.1),
+                Ingredient(title: ham.0, price: ham.1),
+                Ingredient(title: eggs.0, price: eggs.1),
+                Ingredient(title: cheese.0, price: cheese.1),
+                Ingredient(title: cream.0, price: cream.1),
+            ],
+        ["Лазанья с ветчиной": .Italy]:
+            [
+                Ingredient(title: ham.0, price: ham.1),
+                Ingredient(title: cream.0, price: cream.1),
+                Ingredient(title: lasagnaSheets.0, price: lasagnaSheets.1),
+                Ingredient(title: cheese.0, price: cheese.1),
+            ],
+        ["Паста феттучини": .Italy]:
+            [
+                Ingredient(title: spaghetti.0, price: spaghetti.1),
+                Ingredient(title: ham.0, price: ham.1),
+                Ingredient(title: cream.0, price: cream.1),
+                Ingredient(title: cheese.0, price: cheese.1)
+            ],
+        ["Голубцы": .Russia]:
+            [
+                Ingredient(title: pork.0, price: pork.1),
+                Ingredient(title: cabbage.0, price: cabbage.1),
+                Ingredient(title: rice.0, price: rice.1),
+                Ingredient(title: onion.0, price: onion.1),
+                Ingredient(title: sourCream.0, price: sourCream.1)
+            ],
+        ["Жаркое в горшочке": .Russia]:
+            [
+                Ingredient(title: onion.0, price: onion.1),
+                Ingredient(title: pork.0, price: pork.1),
+                Ingredient(title: potatoes.0, price: potatoes.1),
+                Ingredient(title: cheese.0, price: cheese.1),
+                Ingredient(title: sourCream.0, price: sourCream.1)
+            ],
+        ["Свинина с картофелем запеченная": .Russia]:
+            [
+                Ingredient(title: garlic.0, price: garlic.1),
+                Ingredient(title: potatoes.0, price: potatoes.1),
+                Ingredient(title: pork.0, price: pork.1),
+                Ingredient(title: sourCream.0, price: sourCream.1)
+            ],
+        ["Стейк из мраморной говядины": .USA]:
+            [
+                Ingredient(title: butter.0, price: butter.1),
+                Ingredient(title: beef.0, price: beef.1)
+            ],
+        ["Говядина запеченая с овощами": .USA]:
+            [
+                Ingredient(title: tomatoes.0, price: tomatoes.1),
+                Ingredient(title: onion.0, price: onion.1),
+                Ingredient(title: beef.0, price: beef.1),
+                Ingredient(title: carrot.0, price: carrot.1)
+            ],
+        ["Тушеная говядина в пиве с луком": .USA]:
+            [
+                Ingredient(title: onion.0, price: onion.1),
+                Ingredient(title: beef.0, price: beef.1),
+                Ingredient(title: lightBeer.0, price: lightBeer.1)
+            ],
+        ["Хинкали": .Georgia]:
+            [
+                Ingredient(title: flour.0, price: flour.1),
+                Ingredient(title: lamb.0, price: lamb.1),
+                Ingredient(title: salo.0, price: salo.1),
+                Ingredient(title: onion.0, price: onion.1),
+                Ingredient(title: garlic.0, price: garlic.1),
+            ],
+        ["Долма с бараниной": .Georgia]:
+            [
+                Ingredient(title: lamb.0, price: lamb.1),
+                Ingredient(title: rice.0, price: rice.1),
+                Ingredient(title: grapeLeaves.0, price: grapeLeaves.1),
+                Ingredient(title: garlic.0, price: garlic.1),
+                Ingredient(title: sourCream.0, price: sourCream.1)
+            ],
+        ["Чакапули": .Georgia]:
+            [
+                Ingredient(title: lamb.0, price: lamb.1),
+                Ingredient(title: greenOnion.0, price: greenOnion.1),
+                Ingredient(title: parsley.0, price: parsley.1),
+                Ingredient(title: whiteWine.0, price: whiteWine.1),
+
+            ]
     ]
     
     private init() {}
