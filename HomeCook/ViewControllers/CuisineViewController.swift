@@ -10,25 +10,33 @@ class CuisineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for (button, dish) in zip(cuisineButtons, Cuisine.allCases) {
-            button.setTitle(dish.rawValue, for: .normal)
-        }
+        setupButtons()
     }
     
     @IBAction func cuisineButtonPressed(_ sender: UIButton) {
         guard let dishesVC = storyboard?
                 .instantiateViewController(withIdentifier: "DishesVC")
                 as? DishesViewController else { return }
-        switch sender.titleLabel?.text {
-        case "Итальянская":
-            dishesVC.dishes = dishes.filter { $0.cuisine == .italy }
-        case "Русская":
-            dishesVC.dishes = dishes.filter { $0.cuisine == .russia }
-        case "Американская":
-            dishesVC.dishes = dishes.filter { $0.cuisine == .usa }
-        default:
-            dishesVC.dishes = dishes.filter { $0.cuisine == .georgia }
-        }
+        
+        dishesVC.dishes = getCuisineDishes(of: sender)
+        
         navigationController?.pushViewController(dishesVC, animated: true)
+    }
+    
+    // MARK: - Private Methods
+    private func setupButtons() {
+        for (button, dish) in zip(cuisineButtons, Cuisine.allCases) {
+            button.setTitle(dish.rawValue, for: .normal)
+        }
+    }
+    
+    private func getCuisineDishes(of sender: UIButton) -> [Dish] {
+        var cuisineDishes: [Dish] = []
+        for dish in dishes {
+            if dish.cuisine.rawValue == sender.titleLabel?.text {
+                cuisineDishes.append(dish)
+            }
+        }
+        return cuisineDishes
     }
 }
