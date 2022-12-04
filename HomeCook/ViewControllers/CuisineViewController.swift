@@ -24,6 +24,7 @@ class CuisineViewController: UIViewController {
     }
     
     // MARK: - Private Methods
+    
     private func setupButtons() {
         for (button, dish) in zip(cuisineButtons, Cuisine.allCases) {
             button.setTitle(dish.rawValue, for: .normal)

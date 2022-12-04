@@ -15,6 +15,7 @@ class DishesViewController: UIViewController {
     }
     
     @IBAction func dishButtonPressed(_ sender: UIButton) {
+        
         guard let productsVC = storyboard?
                 .instantiateViewController(withIdentifier: "ProductsVC")
                 as? ProductsViewController else { return }
@@ -22,10 +23,11 @@ class DishesViewController: UIViewController {
         productsVC.dish = getDish(of: sender)
         
         navigationController?.pushViewController(productsVC, animated: true)
+        
     }
     
-    
     // MARK: - Private Methods
+    
     private func setupButtons() {
         for (button, dish) in zip(dishButtons, dishes) {
             button.setTitle(dish.title, for: .normal)
