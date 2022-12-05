@@ -600,6 +600,16 @@
                             <constraint firstItem="9tU-U3-wqv" firstAttribute="trailing" secondItem="tJD-4g-s7a" secondAttribute="trailing" constant="87" id="yxe-bC-L8Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="cookButtons" destination="Gfa-36-AyG" collectionClass="NSMutableArray" id="NQb-iu-xF2"/>
+                        <outletCollection property="cookButtons" destination="zGp-ui-fWg" collectionClass="NSMutableArray" id="teD-RG-dy1"/>
+                        <outletCollection property="cookButtons" destination="yWg-ke-ttB" collectionClass="NSMutableArray" id="PtB-W4-qFn"/>
+                        <outletCollection property="cookButtons" destination="o3g-ZR-c9S" collectionClass="NSMutableArray" id="C3M-Yv-Fc6"/>
+                        <outletCollection property="cookDescriptionLabel" destination="rg5-8b-yXL" collectionClass="NSMutableArray" id="VeQ-BB-UWB"/>
+                        <outletCollection property="cookDescriptionLabel" destination="wPB-jn-tt5" collectionClass="NSMutableArray" id="9w3-db-zCa"/>
+                        <outletCollection property="cookDescriptionLabel" destination="Mop-bs-3pa" collectionClass="NSMutableArray" id="06L-U8-xDj"/>
+                        <outletCollection property="cookDescriptionLabel" destination="ZBB-qD-EzX" collectionClass="NSMutableArray" id="U8D-My-XNC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMA-1L-I8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
