@@ -42,24 +42,23 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-kh-ExB">
-                                <rect key="frame" x="16" y="292" width="288" height="121"/>
+                                <rect key="frame" x="16" y="309" width="382" height="152"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-Tu-Npb">
-                                        <rect key="frame" x="0.0" y="0.0" width="134" height="121"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180.5" height="152"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2uI-tu-N8u">
-                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2uI-tu-N8u">
+                                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="118.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2uI-tu-N8u" secondAttribute="height" multiplier="157:103" id="dX0-Q1-0fN"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-9c-F5F">
-                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <rect key="frame" x="0.0" y="118.5" width="180.5" height="33.5"/>
                                                 <color key="backgroundColor" name="FirstButtonColor"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Итальянская"/>
                                                 <connections>
                                                     <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9V-xU-5QA"/>
                                                 </connections>
@@ -67,21 +66,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwj-O0-x5n">
-                                        <rect key="frame" x="154" y="0.0" width="134" height="121"/>
+                                        <rect key="frame" x="200.5" y="0.0" width="181.5" height="152"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-sK-iMr">
-                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-sK-iMr">
+                                                <rect key="frame" x="0.0" y="0.0" width="181.5" height="119"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3DP-sK-iMr" secondAttribute="height" multiplier="157:103" id="ako-6I-VMt"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-hJ-ebZ">
-                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <rect key="frame" x="0.0" y="119" width="181.5" height="33"/>
                                                 <color key="backgroundColor" name="FirstButtonColor"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Русская"/>
                                                 <connections>
                                                     <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaW-yF-DJ5"/>
                                                 </connections>
@@ -91,13 +89,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-y8-Er9">
-                                <rect key="frame" x="16" y="433" width="288" height="119"/>
+                                <rect key="frame" x="16" y="481" width="382" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-9z-zzP">
                                         <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pje-EC-5Jb">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pje-EC-5Jb">
+                                                <rect key="frame" x="0.0" y="0.0" width="178" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Pje-EC-5Jb" secondAttribute="height" multiplier="157:103" id="u7n-F2-Mul"/>
                                                 </constraints>
@@ -108,7 +106,6 @@
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Американская"/>
                                                 <connections>
                                                     <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Px-0y7"/>
                                                 </connections>
@@ -118,8 +115,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-Cg-oEd">
                                         <rect key="frame" x="157" y="0.0" width="131" height="119"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29A-xh-G4D">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29A-xh-G4D">
+                                                <rect key="frame" x="0.0" y="0.0" width="178" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="29A-xh-G4D" secondAttribute="height" multiplier="157:103" id="IeS-t2-Bn0"/>
                                                 </constraints>
@@ -130,7 +127,6 @@
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Грузинская"/>
                                                 <connections>
                                                     <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGy-CE-yhM"/>
                                                 </connections>
@@ -155,12 +151,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hWI-3u-UZs" secondAttribute="trailing" constant="16" id="vm4-7x-CRL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Cook" id="SS9-t3-c8X"/>
+                    <navigationItem key="navigationItem" title="Home Cook" id="SS9-t3-c8X">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="L00-Fo-PWh"/>
+                    </navigationItem>
                     <connections>
                         <outletCollection property="cuisineButtons" destination="wQJ-9c-F5F" collectionClass="NSMutableArray" id="H1i-Ix-geh"/>
                         <outletCollection property="cuisineButtons" destination="Qpl-hJ-ebZ" collectionClass="NSMutableArray" id="L1M-cS-ZuM"/>
                         <outletCollection property="cuisineButtons" destination="ZXf-oI-iwH" collectionClass="NSMutableArray" id="Qrg-RX-9Hm"/>
                         <outletCollection property="cuisineButtons" destination="j1N-E0-0fT" collectionClass="NSMutableArray" id="cfc-WE-YPz"/>
+                        <outletCollection property="cuisinePictures" destination="2uI-tu-N8u" collectionClass="NSMutableArray" id="r4d-CD-Xke"/>
+                        <outletCollection property="cuisinePictures" destination="3DP-sK-iMr" collectionClass="NSMutableArray" id="ZTF-8c-rPw"/>
+                        <outletCollection property="cuisinePictures" destination="Pje-EC-5Jb" collectionClass="NSMutableArray" id="9wK-EI-4kV"/>
+                        <outletCollection property="cuisinePictures" destination="29A-xh-G4D" collectionClass="NSMutableArray" id="t0u-m6-nze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -178,8 +180,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-RB-9OD">
                                 <rect key="frame" x="16" y="58" width="288" height="384"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="108"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-eQ-HEG">
                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
@@ -187,8 +189,8 @@
                                                     <constraint firstAttribute="width" secondItem="0ar-eQ-HEG" secondAttribute="height" multiplier="150:100" id="2CK-Vu-7Yx"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
-                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
+                                                <rect key="frame" x="182" y="0.0" width="200" height="108"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -201,8 +203,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
-                                        <rect key="frame" x="0.0" y="138" width="288" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
+                                        <rect key="frame" x="0.0" y="138" width="382" height="108"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-zI-Kl3">
                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
@@ -210,8 +212,8 @@
                                                     <constraint firstAttribute="width" secondItem="9ex-zI-Kl3" secondAttribute="height" multiplier="150:100" id="eQh-0X-MLI"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
-                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
+                                                <rect key="frame" x="182" y="0.0" width="200" height="108"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button">
@@ -223,8 +225,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
-                                        <rect key="frame" x="0.0" y="276" width="288" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
+                                        <rect key="frame" x="0.0" y="276" width="382" height="108"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-xF-pUL">
                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="108"/>
@@ -232,8 +234,8 @@
                                                     <constraint firstAttribute="width" secondItem="u2p-xF-pUL" secondAttribute="height" multiplier="150:100" id="ECv-W6-yME"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
-                                                <rect key="frame" x="172" y="0.0" width="116" height="108"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
+                                                <rect key="frame" x="182" y="0.0" width="200" height="108"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button">
@@ -273,6 +275,9 @@
                         <outletCollection property="dishButtons" destination="NwK-4W-CeZ" collectionClass="NSMutableArray" id="a9X-IQ-DfW"/>
                         <outletCollection property="dishButtons" destination="4sh-pP-Ee1" collectionClass="NSMutableArray" id="PyE-pK-qtU"/>
                         <outletCollection property="dishButtons" destination="yLI-zo-aPQ" collectionClass="NSMutableArray" id="glC-0D-D7W"/>
+                        <outletCollection property="dishPictures" destination="0ar-eQ-HEG" collectionClass="NSMutableArray" id="fhS-LA-vfI"/>
+                        <outletCollection property="dishPictures" destination="9ex-zI-Kl3" collectionClass="NSMutableArray" id="Xsc-Kq-TOe"/>
+                        <outletCollection property="dishPictures" destination="u2p-xF-pUL" collectionClass="NSMutableArray" id="fXC-EX-3ZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syl-K5-Mmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -288,6 +293,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TitleColor"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="30"/>
                             <color key="textColor" name="TitleColor"/>
@@ -634,10 +642,10 @@
                                 <rect key="frame" x="20" y="95" width="272" height="180.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-pJ-8m7">
-                                        <rect key="frame" x="16" y="0.0" width="240" height="50"/>
+                                        <rect key="frame" x="63" y="0.0" width="240" height="124"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-zM-lLQ">
-                                        <rect key="frame" x="32" y="159" width="208" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="233" width="366" height="197.5"/>
                                         <string key="text">стоимость одного блюда  с учетом ставки повара;  можно сделать возможность  выбора кол-ва с изменением  стоимости сразу  на этом экране</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>

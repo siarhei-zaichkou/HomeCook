@@ -5,12 +5,18 @@ class CuisineViewController: UIViewController {
     
     @IBOutlet var cuisineButtons: [UIButton]!
     
+    @IBOutlet var cuisinePictures: [UIImageView]!
+    
+    
     let dishes = Dish.getDishes()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem?.title = "Back"
+        navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         setupButtons()
+        setupPictures()
     }
     
     @IBAction func cuisineButtonPressed(_ sender: UIButton) {
@@ -26,8 +32,15 @@ class CuisineViewController: UIViewController {
     // MARK: - Private Methods
     
     private func setupButtons() {
-        for (button, dish) in zip(cuisineButtons, Cuisine.allCases) {
-            button.setTitle(dish.rawValue, for: .normal)
+        for (button, cuisine) in zip(cuisineButtons, Cuisine.allCases) {
+            button.setTitle(cuisine.rawValue, for: .normal)
+        }
+    }
+    
+    private func setupPictures() {
+        for (picture, button) in zip(cuisinePictures, cuisineButtons) {
+            picture.image = UIImage(named: button.titleLabel?.text ?? "")
+
         }
     }
     

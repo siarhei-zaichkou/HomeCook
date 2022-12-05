@@ -9,6 +9,8 @@ class ProductsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem?.title = "Back"
+        navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         setupLabels()
         print(dish.price)

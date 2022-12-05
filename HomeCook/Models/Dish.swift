@@ -19,7 +19,9 @@ extension Dish {
             dish.key.forEach {
                 dishes.append(
                     Dish(
-                        title: $0.key, cuisine: $0.value, ingredients: dish.value
+                        title: $0.key,
+                        cuisine: $0.value,
+                        ingredients: dish.value
                     )
                 )
             }
@@ -29,8 +31,10 @@ extension Dish {
 }
 
 enum Cuisine: String, CaseIterable {
-    case italy = "Итальянская"
-    case russia = "Русская"
-    case usa = "Американская"
-    case georgia = "Грузинская"
+    case italy = "Итальянская кухня"
+    case russia = "Русская кухня"
+    case usa = "Американская кухня"
+    case georgia = "Грузинская кухня"
 }
+
+
