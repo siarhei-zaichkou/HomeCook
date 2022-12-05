@@ -5,6 +5,7 @@ class CookSelectionViewController: UIViewController {
 
     @IBOutlet var priceWithoutCook: UILabel!
     var dishPrice: Int!
+    let cook = Cook(
     
     override func viewDidLoad() {
         super.viewDidLoad()

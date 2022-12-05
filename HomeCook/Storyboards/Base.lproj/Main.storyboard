@@ -606,10 +606,10 @@
             </objects>
             <point key="canvasLocation" x="11079.710144927538" y="53.571428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="mAr-q3-fmH">
             <objects>
-                <viewController id="emv-92-1X2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderVC" id="emv-92-1X2" customClass="OrderViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPI-YT-lxT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
