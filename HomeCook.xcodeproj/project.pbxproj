@@ -11,6 +11,7 @@
 		A572CC67293B6BF000545FBE /* DishesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CC66293B6BF000545FBE /* DishesStore.swift */; };
 		A572CC6B293CC17000545FBE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CC6A293CC17000545FBE /* ProductsViewController.swift */; };
 		A572CC6D293CE9D100545FBE /* CookSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CC6C293CE9D100545FBE /* CookSelectionViewController.swift */; };
+		A572CC73293E724F00545FBE /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CC72293E724F00545FBE /* OrderViewController.swift */; };
 		A58F55EB2935FEC100DB147B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F55EA2935FEC100DB147B /* AppDelegate.swift */; };
 		A58F55ED2935FEC100DB147B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F55EC2935FEC100DB147B /* SceneDelegate.swift */; };
 		A58F55EF2935FEC100DB147B /* CuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F55EE2935FEC100DB147B /* CuisineViewController.swift */; };
@@ -28,6 +29,7 @@
 		A572CC66293B6BF000545FBE /* DishesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishesStore.swift; sourceTree = "<group>"; };
 		A572CC6A293CC17000545FBE /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		A572CC6C293CE9D100545FBE /* CookSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CookSelectionViewController.swift; path = HomeCook/ViewControllers/CookSelectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		A572CC72293E724F00545FBE /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A58F55E72935FEC000DB147B /* HomeCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58F55EA2935FEC100DB147B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58F55EC2935FEC100DB147B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				07ADD568293A2B840072D60B /* DishesViewController.swift */,
 				A572CC6A293CC17000545FBE /* ProductsViewController.swift */,
 				A572CC6C293CE9D100545FBE /* CookSelectionViewController.swift */,
+				A572CC72293E724F00545FBE /* OrderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				A58F56042936009F00DB147B /* Cook.swift in Sources */,
 				A58F55EB2935FEC100DB147B /* AppDelegate.swift in Sources */,
 				A58F55ED2935FEC100DB147B /* SceneDelegate.swift in Sources */,
+				A572CC73293E724F00545FBE /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
