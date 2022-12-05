@@ -41,26 +41,26 @@ class DishesStore {
                 Ingredient(title: cheese.0, price: cheese.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Свинина с картофелем запеченная": .russia]:
+        ["Свинина с картофелем": .russia]:
             [
                 Ingredient(title: garlic.0, price: garlic.1),
                 Ingredient(title: potatoes.0, price: potatoes.1),
                 Ingredient(title: pork.0, price: pork.1),
                 Ingredient(title: sourCream.0, price: sourCream.1)
             ],
-        ["Стейк из мраморной говядины": .usa]:
+        ["Стейк из говядины": .usa]:
             [
                 Ingredient(title: butter.0, price: butter.1),
                 Ingredient(title: beef.0, price: beef.1)
             ],
-        ["Говядина запеченая с овощами": .usa]:
+        ["Говядина запеченая": .usa]:
             [
                 Ingredient(title: tomatoes.0, price: tomatoes.1),
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: beef.0, price: beef.1),
                 Ingredient(title: carrot.0, price: carrot.1)
             ],
-        ["Тушеная говядина в пиве с луком": .usa]:
+        ["Говядина в пиве": .usa]:
             [
                 Ingredient(title: onion.0, price: onion.1),
                 Ingredient(title: beef.0, price: beef.1),
@@ -91,12 +91,7 @@ class DishesStore {
 
             ]
     ]
-//    let images =
-//    "italian",
-//    "russian",
-//    "american",
-//    "georgian"
-//    ]
+
     private init() {}
 }
 
