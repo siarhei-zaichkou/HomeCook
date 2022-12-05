@@ -8,6 +8,8 @@ class DishesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem?.title = "Back"
+        navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         title = dishes[0].cuisine.rawValue
         

@@ -91,7 +91,12 @@ class DishesStore {
 
             ]
     ]
-    
+//    let images =
+//    "italian",
+//    "russian",
+//    "american",
+//    "georgian"
+//    ]
     private init() {}
 }
 

@@ -3,6 +3,7 @@ struct Dish {
     let title: String
     let cuisine: Cuisine
     let ingredients: [Ingredient]
+   // let image: String
    
     var price: Int {
         var cost = 0
@@ -29,8 +30,8 @@ extension Dish {
 }
 
 enum Cuisine: String, CaseIterable {
-    case italy = "Итальянская"
-    case russia = "Русская"
-    case usa = "Американская"
-    case georgia = "Грузинская"
+    case italy = "Итальянская кухня"
+    case russia = "Русская кухня"
+    case usa = "Американская кухня"
+    case georgia = "Грузинская кухня"
 }
