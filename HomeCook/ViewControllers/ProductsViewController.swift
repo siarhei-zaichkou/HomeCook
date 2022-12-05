@@ -21,6 +21,7 @@ class ProductsViewController: UIViewController {
                 as? CookSelectionViewController else { return }
         
         cookSelectionVC.dishPrice = calculateDishPrice()
+        cookSelectionVC.dishTitle = dish.title
         navigationController?.pushViewController(cookSelectionVC, animated: true)
     }
     
