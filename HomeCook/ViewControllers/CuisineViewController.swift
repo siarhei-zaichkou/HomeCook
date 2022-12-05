@@ -9,6 +9,8 @@ class CuisineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem?.title = "Back"
+        navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         setupButtons()
     }
