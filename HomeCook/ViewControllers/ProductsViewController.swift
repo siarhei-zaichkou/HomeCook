@@ -13,7 +13,6 @@ class ProductsViewController: UIViewController {
         navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         setupLabels()
-        print(dish.price)
     }
     
     @IBAction func chooseCookButtonPressed() {
