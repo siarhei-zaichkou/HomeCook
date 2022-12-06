@@ -12,7 +12,7 @@ class ProductsViewController: UIViewController {
         
         navigationItem.backBarButtonItem?.title = "Back"
         navigationItem.backBarButtonItem?.tintColor = .systemGray
-        title = "Home Cook"
+        title = dish.title
         
         setupLabels()
     }

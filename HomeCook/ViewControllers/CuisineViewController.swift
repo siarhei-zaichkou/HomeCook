@@ -16,6 +16,7 @@ class CuisineViewController: UIViewController {
         
         setupButtons()
         setupPictures()
+        title = "Home Cook"
     }
     
     @IBAction func cuisineButtonPressed(_ sender: UIButton) {
