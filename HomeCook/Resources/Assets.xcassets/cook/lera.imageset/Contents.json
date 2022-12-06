@@ -1,9 +1,7 @@
 {
   "images" : [
     {
-
-      "filename" : "olya.jpeg",
-
+      "filename" : "lera.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "olya.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,9 +1,7 @@
 {
   "images" : [
     {
-
       "filename" : "sergey.jpeg",
-
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "sergey.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -9,25 +9,27 @@ class ProductsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.backBarButtonItem?.title = "Back"
         navigationItem.backBarButtonItem?.tintColor = .systemGray
+        title = "Home Cook"
         
         setupLabels()
     }
     
     @IBAction func chooseCookButtonPressed() {
         guard let cookSelectionVC = storyboard?
-                .instantiateViewController(withIdentifier: "CookSelectionVC")
+            .instantiateViewController(withIdentifier: "CookSelectionVC")
                 as? CookSelectionViewController else { return }
         
         cookSelectionVC.dishPrice = calculateDishPrice()
         cookSelectionVC.dishTitle = dish.title
         navigationController?.pushViewController(cookSelectionVC, animated: true)
     }
-    
-    
-    // MARK: - Private Methods
-    
+}
+
+// MARK: - Private Methods
+extension ProductsViewController {
     private func setupLabels() {
         ingredientStacks.forEach { $0.isHidden = true }
         for (stack, ingredient) in zip(ingredientStacks, dish.ingredients) {

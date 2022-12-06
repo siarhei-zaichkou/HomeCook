@@ -1,9 +1,7 @@
 {
   "images" : [
     {
-
-      "filename" : "misha.jpeg",
-
+      "filename" : "olya.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "misha.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

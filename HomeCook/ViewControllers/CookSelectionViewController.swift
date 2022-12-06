@@ -2,12 +2,12 @@
 import UIKit
 
 class CookSelectionViewController: UIViewController {
-
+    
     @IBOutlet var cookButtons: [UIButton]!
     
     @IBOutlet var cookNamesLabels: [UILabel]!
+    @IBOutlet var cookDescriptionLabels: [UILabel]!
     
-    @IBOutlet var cookDescriptionLabel: [UILabel]!
     var dishPrice: Int!
     var dishTitle: String!
     let cooks = Cook.getCooks()
@@ -17,26 +17,29 @@ class CookSelectionViewController: UIViewController {
         
         navigationItem.backBarButtonItem?.title = "Back"
         navigationItem.backBarButtonItem?.tintColor = .systemGray
+        title = "Home Cook"
         
         setupCooksPhotos()
         setupCooksLabels()
         setupCooksNamesLabels()
     }
-
     
     @IBAction func cookButtonPressed(_ sender: UIButton) {
         guard let orderVC = storyboard?
-                .instantiateViewController(withIdentifier: "OrderVC")
+            .instantiateViewController(withIdentifier: "OrderVC")
                 as? OrderViewController else { return }
         
         guard let buttonIndex = cookButtons.firstIndex(of: sender) else { return }
         orderVC.totalPrice = dishPrice + cooks[buttonIndex].rate
         orderVC.dishTitle = dishTitle
+        orderVC.cook = cooks[buttonIndex].name
         navigationController?.pushViewController(orderVC, animated: true)
+        
     }
-    
-    // MARK: - Private Methods
-    
+}
+
+// MARK: - Private Methods
+extension CookSelectionViewController {
     private func setupCooksPhotos() {
         for (button, cook) in zip(cookButtons, cooks) {
             button.setImage(UIImage(named: cook.photo), for: .normal)
@@ -44,7 +47,7 @@ class CookSelectionViewController: UIViewController {
     }
     
     private func setupCooksLabels() {
-        for (label, cook) in zip(cookDescriptionLabel, cooks) {
+        for (label, cook) in zip(cookDescriptionLabels, cooks) {
             label.text = cook.description
         }
     }
@@ -54,5 +57,4 @@ class CookSelectionViewController: UIViewController {
             label.text = cook.name
         }
     }
-    
 }
