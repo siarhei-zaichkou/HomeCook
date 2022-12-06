@@ -14,10 +14,12 @@ class OrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         setupDishData()
         stepper.value = 1
         
+
     }
     
 
