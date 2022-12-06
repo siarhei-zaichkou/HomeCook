@@ -7,7 +7,6 @@ class CuisineViewController: UIViewController {
     
     @IBOutlet var cuisinePictures: [UIImageView]!
     
-    
     let dishes = Dish.getDishes()
     
     override func viewDidLoad() {
@@ -21,16 +20,17 @@ class CuisineViewController: UIViewController {
     
     @IBAction func cuisineButtonPressed(_ sender: UIButton) {
         guard let dishesVC = storyboard?
-                .instantiateViewController(withIdentifier: "DishesVC")
+            .instantiateViewController(withIdentifier: "DishesVC")
                 as? DishesViewController else { return }
         
         dishesVC.dishes = getCuisineDishes(of: sender)
         
         navigationController?.pushViewController(dishesVC, animated: true)
     }
-    
-    // MARK: - Private Methods
-    
+}
+
+// MARK: - Private Methods
+extension CuisineViewController {
     private func setupButtons() {
         for (button, cuisine) in zip(cuisineButtons, Cuisine.allCases) {
             button.setTitle(cuisine.rawValue, for: .normal)
@@ -40,7 +40,7 @@ class CuisineViewController: UIViewController {
     private func setupPictures() {
         for (picture, button) in zip(cuisinePictures, cuisineButtons) {
             picture.image = UIImage(named: button.titleLabel?.text ?? "")
-
+            
         }
     }
     
