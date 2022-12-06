@@ -690,36 +690,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-vL-XCx">
-                                <rect key="frame" x="20" y="139" width="272" height="136.5"/>
+                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-pJ-8m7">
+                                <rect key="frame" x="56" y="54" width="302" height="244"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-zM-lLQ">
+                                <rect key="frame" x="182.5" y="308" width="49.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElV-5P-56f">
+                                <rect key="frame" x="207" y="380.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" name="SubtitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PIT-VO-L60">
+                                <rect key="frame" x="160" y="460.5" width="94" height="67.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-pJ-8m7">
-                                        <rect key="frame" x="63" y="0.0" width="146" height="27.5"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-zM-lLQ">
-                                        <rect key="frame" x="32" y="136.5" width="208" height="0.0"/>
-                                        <string key="text">стоимость одного блюда  с учетом ставки повара;  можно сделать возможность  выбора кол-ва с изменением  стоимости сразу  на этом экране</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-kz-vUC">
+                                        <rect key="frame" x="42" y="0.0" width="10.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-A7-hcu">
+                                        <rect key="frame" x="0.0" y="35.5" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="stepperPressed:" destination="emv-92-1X2" eventType="valueChanged" id="8dI-WM-f4K"/>
+                                        </connections>
+                                    </stepper>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="5Tt-pJ-8m7" firstAttribute="leading" secondItem="rJV-vL-XCx" secondAttribute="leading" constant="63" id="zxn-Vg-tiL"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7ut-Pr-OKF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7ut-Pr-OKF" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rJV-vL-XCx" secondAttribute="bottom" constant="292.5" id="G0c-OB-u0r"/>
-                            <constraint firstItem="rJV-vL-XCx" firstAttribute="leading" secondItem="7ut-Pr-OKF" secondAttribute="leading" constant="20" id="Jzn-qy-Y53"/>
-                            <constraint firstItem="rJV-vL-XCx" firstAttribute="top" secondItem="7ut-Pr-OKF" secondAttribute="top" constant="95" id="LaO-9Q-iwi"/>
-                            <constraint firstItem="7ut-Pr-OKF" firstAttribute="trailing" secondItem="rJV-vL-XCx" secondAttribute="trailing" constant="28" id="QFO-10-Id9"/>
-                            <constraint firstItem="7ut-Pr-OKF" firstAttribute="bottom" secondItem="rJV-vL-XCx" secondAttribute="bottom" constant="366.5" id="q4c-Gx-m1f"/>
+                            <constraint firstItem="ElV-5P-56f" firstAttribute="top" secondItem="wRC-zM-lLQ" secondAttribute="bottom" constant="40" id="1P0-Ed-Cht"/>
+                            <constraint firstItem="PIT-VO-L60" firstAttribute="centerX" secondItem="7ut-Pr-OKF" secondAttribute="centerX" id="LKi-8g-gez"/>
+                            <constraint firstItem="wRC-zM-lLQ" firstAttribute="top" secondItem="5Tt-pJ-8m7" secondAttribute="bottom" constant="10" id="Mwp-qD-pQ6"/>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="top" secondItem="7ut-Pr-OKF" secondAttribute="top" constant="10" id="RgQ-h0-JLn"/>
+                            <constraint firstItem="ElV-5P-56f" firstAttribute="centerX" secondItem="7ut-Pr-OKF" secondAttribute="centerX" id="Vuz-Zq-YMe"/>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="centerX" secondItem="7ut-Pr-OKF" secondAttribute="centerX" id="dJi-t7-wvv"/>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="width" secondItem="XPI-YT-lxT" secondAttribute="width" multiplier="0.729469" id="gTA-y1-Dai"/>
+                            <constraint firstItem="wRC-zM-lLQ" firstAttribute="centerX" secondItem="7ut-Pr-OKF" secondAttribute="centerX" id="joA-KL-O3h"/>
+                            <constraint firstItem="PIT-VO-L60" firstAttribute="top" secondItem="ElV-5P-56f" secondAttribute="bottom" constant="80" id="moi-ic-Ahc"/>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="height" secondItem="XPI-YT-lxT" secondAttribute="height" multiplier="0.272321" id="qJr-5B-Ofo"/>
                         </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+
+                    <connections>
+                        <outlet property="dishImageView" destination="5Tt-pJ-8m7" id="rBC-7M-qdP"/>
+                        <outlet property="dishTitleLabel" destination="wRC-zM-lLQ" id="Ytr-d7-q7i"/>
+                        <outlet property="quantityLabel" destination="XD1-kz-vUC" id="Dxf-1n-tCh"/>
+                        <outlet property="stepper" destination="JI7-A7-hcu" id="1Rt-PO-TGO"/>
+                        <outlet property="totalPriceLabel" destination="ElV-5P-56f" id="IVV-QW-XIh"/>
+                    </connections>
+
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8z-fv-mUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,7 @@ class CookSelectionViewController: UIViewController {
     
     @IBOutlet var cookDescriptionLabel: [UILabel]!
     var dishPrice: Int!
+    var dishTitle: String!
     let cooks = Cook.getCooks()
     
     override func viewDidLoad() {
@@ -27,7 +28,10 @@ class CookSelectionViewController: UIViewController {
         guard let orderVC = storyboard?
                 .instantiateViewController(withIdentifier: "OrderVC")
                 as? OrderViewController else { return }
-        orderVC.dishPrice = dishPrice
+        
+        guard let buttonIndex = cookButtons.firstIndex(of: sender) else { return }
+        orderVC.totalPrice = dishPrice + cooks[buttonIndex].rate
+        orderVC.dishTitle = dishTitle
         navigationController?.pushViewController(orderVC, animated: true)
     }
     
