@@ -5,17 +5,21 @@ class CookSelectionViewController: UIViewController {
 
     @IBOutlet var cookButtons: [UIButton]!
     
+    @IBOutlet var cookNamesLabels: [UILabel]!
+    
     @IBOutlet var cookDescriptionLabel: [UILabel]!
     var dishPrice: Int!
     let cooks = Cook.getCooks()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.backBarButtonItem?.title = "Back"
         navigationItem.backBarButtonItem?.tintColor = .systemGray
         
         setupCooksPhotos()
         setupCooksLabels()
+        setupCooksNamesLabels()
     }
 
     
@@ -40,4 +44,11 @@ class CookSelectionViewController: UIViewController {
             label.text = cook.description
         }
     }
+    
+    private func setupCooksNamesLabels() {
+        for (label, cook) in zip(cookNamesLabels, cooks) {
+            label.text = cook.name
+        }
+    }
+    
 }
