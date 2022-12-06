@@ -20,13 +20,10 @@ class OrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.backBarButtonItem?.title = "Back"
-        navigationItem.backBarButtonItem?.tintColor = .systemGray
-        title = "Home Cook"
-        
         setupCookData()
         setupDishData()
         stepper.value = 1
+        title = "Заказ"
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {

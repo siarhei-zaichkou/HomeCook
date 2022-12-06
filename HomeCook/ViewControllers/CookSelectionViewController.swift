@@ -17,7 +17,7 @@ class CookSelectionViewController: UIViewController {
         
         navigationItem.backBarButtonItem?.title = "Back"
         navigationItem.backBarButtonItem?.tintColor = .systemGray
-        title = "Home Cook"
+        title = "Ваш Повар"
         
         setupCooksPhotos()
         setupCooksLabels()

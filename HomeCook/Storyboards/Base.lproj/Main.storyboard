@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Cook-->
+        <!--Cuisine View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CuisineViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,8 +150,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hWI-3u-UZs" secondAttribute="trailing" constant="16" id="vm4-7x-CRL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Cook" id="SS9-t3-c8X">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="L00-Fo-PWh"/>
+                    <navigationItem key="navigationItem" id="SS9-t3-c8X">
+                        <barButtonItem key="backBarButtonItem" title="back" id="fgD-mD-XSX"/>
                     </navigationItem>
                     <connections>
                         <outletCollection property="cuisineButtons" destination="wQJ-9c-F5F" collectionClass="NSMutableArray" id="H1i-Ix-geh"/>
@@ -268,10 +268,12 @@
                             <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="2W8-RB-9OD" secondAttribute="trailing" constant="16" id="iM4-5F-aNZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rpD-JK-dHo">
-                        <barButtonItem key="backBarButtonItem" title="Все кухни" id="yjG-Ge-cPV"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ooB-6D-yxK">
+                        <barButtonItem key="backBarButtonItem" title="Кухни" id="uFX-eH-6UC"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outletCollection property="dishButtons" destination="NwK-4W-CeZ" collectionClass="NSMutableArray" id="a9X-IQ-DfW"/>
                         <outletCollection property="dishButtons" destination="4sh-pP-Ee1" collectionClass="NSMutableArray" id="PyE-pK-qtU"/>
@@ -372,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfF-wc-ciW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8203" y="764"/>
+            <point key="canvasLocation" x="7678" y="425"/>
         </scene>
         <!--Products View Controller-->
         <scene sceneID="kbt-NI-7vL">
@@ -486,7 +488,9 @@
                             <constraint firstItem="Ufi-M8-ncQ" firstAttribute="top" secondItem="Tgo-mU-PM1" secondAttribute="bottom" constant="20" id="asR-ZE-V4R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cRc-Jz-afa"/>
+                    <navigationItem key="navigationItem" id="cRc-Jz-afa">
+                        <barButtonItem key="backBarButtonItem" title="Выбор блюда" id="Br2-Os-YFB"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outletCollection property="ingredientStacks" destination="Edb-gW-GLI" collectionClass="NSMutableArray" id="TZ4-Dq-7ov"/>
@@ -661,6 +665,9 @@
                             <constraint firstItem="9tU-U3-wqv" firstAttribute="trailing" secondItem="tJD-4g-s7a" secondAttribute="trailing" constant="16" id="yxe-bC-L8Y"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SSO-9a-I0M">
+                        <barButtonItem key="backBarButtonItem" title="Ингредиенты" id="pfX-xI-cbo"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outletCollection property="cookButtons" destination="Gfa-36-AyG" collectionClass="NSMutableArray" id="NQb-iu-xF2"/>
@@ -809,6 +816,7 @@
                             <constraint firstItem="7ut-Pr-OKF" firstAttribute="trailing" secondItem="bRp-np-LIU" secondAttribute="trailing" constant="16" id="uT5-pa-Z4b"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NHN-Kz-pje"/>
                     <connections>
                         <outlet property="dishImageView" destination="5Tt-pJ-8m7" id="rBC-7M-qdP"/>
                         <outlet property="dishTitleLabel" destination="wRC-zM-lLQ" id="Ytr-d7-q7i"/>
