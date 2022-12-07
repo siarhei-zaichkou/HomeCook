@@ -68,8 +68,9 @@ extension OrderViewController {
         )
         let okAction = UIAlertAction(
             title: "OK",
-            style: .default
-        )
+            style: .default) {_ in
+                self.navigationController?.dismiss(animated: true)
+            }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
