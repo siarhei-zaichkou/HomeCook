@@ -1,12 +1,9 @@
 
-import Foundation
-
-
 struct Position {
     let dish: Dish
-    var count: Double
+    var count: Int
     let cook: Cook
-    var cost: Double {
+    var cost: Int {
         dish.price * count
     }
 }

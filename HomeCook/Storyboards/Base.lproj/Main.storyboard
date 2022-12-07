@@ -1,24 +1,867 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U7e-ck-Z3J">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cuisine View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CuisineViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-3u-UZs">
+                                <rect key="frame" x="16" y="120" width="288" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите, блюдо какой кухни хотите  попробовать." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTi-hB-YDu">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                        <color key="textColor" name="SubtitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-kh-ExB">
+                                <rect key="frame" x="16" y="186" width="288" height="121"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-Tu-Npb">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="121"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2uI-tu-N8u">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2uI-tu-N8u" secondAttribute="height" multiplier="157:103" id="dX0-Q1-0fN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-9c-F5F">
+                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9V-xU-5QA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwj-O0-x5n">
+                                        <rect key="frame" x="154" y="0.0" width="134" height="121"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-sK-iMr">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3DP-sK-iMr" secondAttribute="height" multiplier="157:103" id="ako-6I-VMt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-hJ-ebZ">
+                                                <rect key="frame" x="0.0" y="88" width="134" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaW-yF-DJ5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-y8-Er9">
+                                <rect key="frame" x="16" y="327" width="288" height="119"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-9z-zzP">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pje-EC-5Jb">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Pje-EC-5Jb" secondAttribute="height" multiplier="157:103" id="u7n-F2-Mul"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXf-oI-iwH">
+                                                <rect key="frame" x="0.0" y="86" width="131" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Px-0y7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-Cg-oEd">
+                                        <rect key="frame" x="157" y="0.0" width="131" height="119"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29A-xh-G4D">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="29A-xh-G4D" secondAttribute="height" multiplier="157:103" id="IeS-t2-Bn0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1N-E0-0fT">
+                                                <rect key="frame" x="0.0" y="86" width="131" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="cuisineButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGy-CE-yhM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Yf-kh-ExB" firstAttribute="top" secondItem="hWI-3u-UZs" secondAttribute="bottom" constant="20" id="A68-BM-iLN"/>
+                            <constraint firstItem="hWI-3u-UZs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G18-aB-mVt"/>
+                            <constraint firstItem="hWI-3u-UZs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OUH-KN-KBH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tiO-y8-Er9" secondAttribute="trailing" constant="16" id="ZpZ-e3-Ho7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Yf-kh-ExB" secondAttribute="trailing" constant="16" id="dQQ-Z0-ApZ"/>
+                            <constraint firstItem="tiO-y8-Er9" firstAttribute="top" secondItem="5Yf-kh-ExB" secondAttribute="bottom" constant="20" id="kEM-KF-KEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tiO-y8-Er9" secondAttribute="bottom" constant="16" id="ogY-a8-4Zi"/>
+                            <constraint firstItem="5Yf-kh-ExB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sHY-Y0-evw"/>
+                            <constraint firstItem="tiO-y8-Er9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vjC-Us-Zut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hWI-3u-UZs" secondAttribute="trailing" constant="16" id="vm4-7x-CRL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SS9-t3-c8X">
+                        <barButtonItem key="backBarButtonItem" title="back" id="fgD-mD-XSX"/>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="cuisineButtons" destination="wQJ-9c-F5F" collectionClass="NSMutableArray" id="H1i-Ix-geh"/>
+                        <outletCollection property="cuisineButtons" destination="Qpl-hJ-ebZ" collectionClass="NSMutableArray" id="L1M-cS-ZuM"/>
+                        <outletCollection property="cuisineButtons" destination="ZXf-oI-iwH" collectionClass="NSMutableArray" id="Qrg-RX-9Hm"/>
+                        <outletCollection property="cuisineButtons" destination="j1N-E0-0fT" collectionClass="NSMutableArray" id="cfc-WE-YPz"/>
+                        <outletCollection property="cuisinePictures" destination="2uI-tu-N8u" collectionClass="NSMutableArray" id="r4d-CD-Xke"/>
+                        <outletCollection property="cuisinePictures" destination="3DP-sK-iMr" collectionClass="NSMutableArray" id="ZTF-8c-rPw"/>
+                        <outletCollection property="cuisinePictures" destination="Pje-EC-5Jb" collectionClass="NSMutableArray" id="9wK-EI-4kV"/>
+                        <outletCollection property="cuisinePictures" destination="29A-xh-G4D" collectionClass="NSMutableArray" id="t0u-m6-nze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="9118.125" y="52.816901408450704"/>
+        </scene>
+        <!--Dishes View Controller-->
+        <scene sceneID="0te-vo-gJw">
+            <objects>
+                <viewController storyboardIdentifier="DishesVC" id="15s-jU-Vpw" customClass="DishesViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugS-Gm-fXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-RB-9OD">
+                                <rect key="frame" x="16" y="117" width="288" height="303"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="81"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-eQ-HEG">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0ar-eQ-HEG" secondAttribute="height" multiplier="150:100" id="2CK-Vu-7Yx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="UFZ-pI-j1R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
+                                        <rect key="frame" x="0.0" y="111" width="288" height="81"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-zI-Kl3">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9ex-zI-Kl3" secondAttribute="height" multiplier="150:100" id="eQh-0X-MLI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="N8P-mh-kBO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
+                                        <rect key="frame" x="0.0" y="222" width="288" height="81"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-xF-pUL">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="u2p-xF-pUL" secondAttribute="height" multiplier="150:100" id="ECv-W6-yME"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="WH5-Pi-v7L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4sh-pP-Ee1" firstAttribute="width" secondItem="yLI-zo-aPQ" secondAttribute="width" id="BF6-Ox-0eV"/>
+                                    <constraint firstItem="NwK-4W-CeZ" firstAttribute="width" secondItem="4sh-pP-Ee1" secondAttribute="width" id="rvC-ch-BW3"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите желаемое блюдо" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqW-DD-GTy">
+                                <rect key="frame" x="16" y="64" width="288" height="23"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                <color key="textColor" name="SubtitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ug-Gw-gME"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2W8-RB-9OD" firstAttribute="top" secondItem="qqW-DD-GTy" secondAttribute="bottom" constant="30" id="3Vg-KR-ga4"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2W8-RB-9OD" secondAttribute="bottom" constant="16" id="Mfp-cQ-hel"/>
+                            <constraint firstItem="0ar-eQ-HEG" firstAttribute="width" secondItem="1ug-Gw-gME" secondAttribute="width" multiplier="0.38" id="Qcw-dw-qka"/>
+                            <constraint firstItem="qqW-DD-GTy" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="UQb-O9-lWJ"/>
+                            <constraint firstItem="2W8-RB-9OD" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="Xwd-Zk-JOe"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="qqW-DD-GTy" secondAttribute="trailing" constant="16" id="eVk-ei-5So"/>
+                            <constraint firstItem="qqW-DD-GTy" firstAttribute="top" secondItem="1ug-Gw-gME" secondAttribute="top" constant="20" id="f4v-y9-jNB"/>
+                            <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="2W8-RB-9OD" secondAttribute="trailing" constant="16" id="iM4-5F-aNZ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ooB-6D-yxK">
+                        <barButtonItem key="backBarButtonItem" title="Кухни" id="uFX-eH-6UC"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outletCollection property="dishButtons" destination="NwK-4W-CeZ" collectionClass="NSMutableArray" id="a9X-IQ-DfW"/>
+                        <outletCollection property="dishButtons" destination="4sh-pP-Ee1" collectionClass="NSMutableArray" id="PyE-pK-qtU"/>
+                        <outletCollection property="dishButtons" destination="yLI-zo-aPQ" collectionClass="NSMutableArray" id="glC-0D-D7W"/>
+                        <outletCollection property="dishPictures" destination="0ar-eQ-HEG" collectionClass="NSMutableArray" id="fhS-LA-vfI"/>
+                        <outletCollection property="dishPictures" destination="9ex-zI-Kl3" collectionClass="NSMutableArray" id="Xsc-Kq-TOe"/>
+                        <outletCollection property="dishPictures" destination="u2p-xF-pUL" collectionClass="NSMutableArray" id="fXC-EX-3ZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syl-K5-Mmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9781.875" y="52.816901408450704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2md-d4-bRi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LES-84-Maw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lew-dL-zFQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mcr-MY-qxD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TitleColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="30"/>
+                            <color key="textColor" name="TitleColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bVQ-Qz-wxC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60Q-Ur-qcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8414" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VbJ-To-J6B">
+            <objects>
+                <viewController id="U7e-ck-Z3J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x5I-04-Exj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-D4-75T">
+                                <rect key="frame" x="16" y="50" width="288" height="399"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZD-7Y-A0q" userLabel="Добро пожаловать в наш ресторан у Вас дома!">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="20"/>
+                                        <color key="textColor" name="TitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Наш профессиональный шеф-повар приготовит вашу любимую еду из Ваших или наших продуктов у Вас дома. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-zk-stB">
+                                        <rect key="frame" x="0.0" y="47" width="288" height="81"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-Ni-7nl">
+                                        <rect key="frame" x="0.0" y="148" width="288" height="192"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aDS-Ni-7nl" secondAttribute="height" multiplier="15:10" id="d9y-e6-HmP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-75-OMH">
+                                        <rect key="frame" x="0.0" y="360" width="288" height="39"/>
+                                        <color key="backgroundColor" name="FirstButtonColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Начать"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="LES-84-Maw" kind="presentation" modalPresentationStyle="fullScreen" id="Qn7-f4-NOj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lw4-Nr-6pt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LwZ-D4-75T" firstAttribute="top" secondItem="Lw4-Nr-6pt" secondAttribute="top" constant="50" id="39M-9A-kl5"/>
+                            <constraint firstItem="LwZ-D4-75T" firstAttribute="leading" secondItem="Lw4-Nr-6pt" secondAttribute="leading" constant="16" id="4cr-V1-MyE"/>
+                            <constraint firstItem="Lw4-Nr-6pt" firstAttribute="trailing" secondItem="LwZ-D4-75T" secondAttribute="trailing" constant="16" id="tlX-T3-8n4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfF-wc-ciW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7646" y="54"/>
+        </scene>
+        <!--Products View Controller-->
+        <scene sceneID="kbt-NI-7vL">
+            <objects>
+                <viewController storyboardIdentifier="ProductsVC" id="tbM-UN-iiB" customClass="ProductsViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAZ-jt-HD7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ufi-M8-ncQ" userLabel="Multiple Stack View">
+                                <rect key="frame" x="16" y="130" width="288" height="270"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edb-gW-GLI">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSa-x8-eQc">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="31"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WLA-6p-tSh">
+                                                <rect key="frame" x="239" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evN-fm-u4S">
+                                        <rect key="frame" x="0.0" y="47" width="288" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-Vt-CJP">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="31"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6qz-xs-XBx">
+                                                <rect key="frame" x="239" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1B-0b-YIn">
+                                        <rect key="frame" x="0.0" y="94" width="288" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-6Z-0O7">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="31"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fiO-g3-gVZ">
+                                                <rect key="frame" x="239" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB3-YW-GNA">
+                                        <rect key="frame" x="0.0" y="141" width="288" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tr-lG-V7i">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="31"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="reT-SJ-Yeq">
+                                                <rect key="frame" x="239" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4s2-Hi-MnV">
+                                        <rect key="frame" x="0.0" y="188" width="288" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-rc-x3z">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="31"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-sW-hZ9">
+                                                <rect key="frame" x="239" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vG0-tb-SSc">
+                                        <rect key="frame" x="0.0" y="235" width="288" height="35"/>
+                                        <color key="backgroundColor" name="FirstButtonColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Перейти к выбору повара">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCookButtonPressed" destination="tbM-UN-iiB" eventType="touchUpInside" id="Dpg-kI-tJx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите ингредиенты, которые есть у Вас дома" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgo-mU-PM1">
+                                <rect key="frame" x="16" y="64" width="288" height="46"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                <color key="textColor" name="SubtitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H6A-b3-uvx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tgo-mU-PM1" firstAttribute="top" secondItem="H6A-b3-uvx" secondAttribute="top" constant="20" id="1jd-HK-brU"/>
+                            <constraint firstItem="Ufi-M8-ncQ" firstAttribute="leading" secondItem="H6A-b3-uvx" secondAttribute="leading" constant="16" id="6cJ-xV-8VZ"/>
+                            <constraint firstItem="H6A-b3-uvx" firstAttribute="trailing" secondItem="Ufi-M8-ncQ" secondAttribute="trailing" constant="16" id="9cs-8O-xvb"/>
+                            <constraint firstItem="Tgo-mU-PM1" firstAttribute="leading" secondItem="H6A-b3-uvx" secondAttribute="leading" constant="16" id="RRX-pa-lGL"/>
+                            <constraint firstItem="H6A-b3-uvx" firstAttribute="trailing" secondItem="Tgo-mU-PM1" secondAttribute="trailing" constant="16" id="Yk7-Cj-WdD"/>
+                            <constraint firstItem="Ufi-M8-ncQ" firstAttribute="top" secondItem="Tgo-mU-PM1" secondAttribute="bottom" constant="20" id="asR-ZE-V4R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cRc-Jz-afa">
+                        <barButtonItem key="backBarButtonItem" title="Выбор блюда" id="Br2-Os-YFB"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outletCollection property="ingredientStacks" destination="Edb-gW-GLI" collectionClass="NSMutableArray" id="TZ4-Dq-7ov"/>
+                        <outletCollection property="ingredientStacks" destination="evN-fm-u4S" collectionClass="NSMutableArray" id="RsU-7s-GQc"/>
+                        <outletCollection property="ingredientStacks" destination="v1B-0b-YIn" collectionClass="NSMutableArray" id="03d-cS-hOm"/>
+                        <outletCollection property="ingredientStacks" destination="aB3-YW-GNA" collectionClass="NSMutableArray" id="rhR-B5-n7u"/>
+                        <outletCollection property="ingredientStacks" destination="4s2-Hi-MnV" collectionClass="NSMutableArray" id="mDH-BW-5fl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWp-eD-zEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10439" y="54"/>
+        </scene>
+        <!--Cook Selection View Controller-->
+        <scene sceneID="oE3-QR-y4X">
+            <objects>
+                <viewController storyboardIdentifier="CookSelectionVC" modalPresentationStyle="fullScreen" id="9BM-nr-TFt" customClass="CookSelectionViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DWo-Ba-USj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-4g-s7a">
+                                <rect key="frame" x="16" y="44" width="288" height="508"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите повара" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHg-wc-R0P">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                        <color key="textColor" name="SubtitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gxo-aj-Ojs">
+                                        <rect key="frame" x="0.0" y="32" width="288" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-36-AyG">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="115.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Gfa-36-AyG" secondAttribute="height" multiplier="10:12" id="DTn-0J-dck"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="cookButtonPressed:" destination="9BM-nr-TFt" eventType="touchUpInside" id="KHI-Bk-iog"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NAz-m0-8Zj">
+                                                <rect key="frame" x="96" y="0.0" width="192" height="115.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddl-DQ-Mjf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                        <color key="textColor" name="SubtitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-8b-yXL">
+                                                        <rect key="frame" x="0.0" y="20.5" width="192" height="95"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="13"/>
+                                                        <color key="textColor" name="TextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-xQ-i3Y">
+                                        <rect key="frame" x="0.0" y="152.5" width="288" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGp-ui-fWg">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="115"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="cookButtonPressed:" destination="9BM-nr-TFt" eventType="touchUpInside" id="KLL-0U-Hkh"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-0W-exC">
+                                                <rect key="frame" x="96" y="0.0" width="192" height="115"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-0p-r9g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                        <color key="textColor" name="SubtitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPB-jn-tt5">
+                                                        <rect key="frame" x="0.0" y="20.5" width="192" height="94.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="13"/>
+                                                        <color key="textColor" name="TextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-GM-DbY">
+                                        <rect key="frame" x="0.0" y="272.5" width="288" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-ke-ttB">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="115.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="cookButtonPressed:" destination="9BM-nr-TFt" eventType="touchUpInside" id="9xs-ol-VJn"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cnq-jI-N6o">
+                                                <rect key="frame" x="96" y="0.0" width="192" height="115.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-ws-Zw8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <color key="textColor" name="SubtitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-bs-3pa">
+                                                        <rect key="frame" x="0.0" y="17.5" width="192" height="98"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="13"/>
+                                                        <color key="textColor" name="TextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-N3-m8r">
+                                        <rect key="frame" x="0.0" y="393" width="288" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-ZR-c9S">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="115"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="cookButtonPressed:" destination="9BM-nr-TFt" eventType="touchUpInside" id="JZZ-hR-HbQ"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4pU-I6-Drn">
+                                                <rect key="frame" x="96" y="0.0" width="192" height="115"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcC-hu-gKv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
+                                                        <color key="textColor" name="SubtitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-qD-EzX">
+                                                        <rect key="frame" x="0.0" y="20.5" width="192" height="94.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="13"/>
+                                                        <color key="textColor" name="TextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="o3g-ZR-c9S" firstAttribute="width" secondItem="Gfa-36-AyG" secondAttribute="width" id="5ma-lr-vYa"/>
+                                    <constraint firstItem="yWg-ke-ttB" firstAttribute="height" secondItem="zGp-ui-fWg" secondAttribute="height" id="6SI-zd-vj9"/>
+                                    <constraint firstItem="zGp-ui-fWg" firstAttribute="height" secondItem="Gfa-36-AyG" secondAttribute="height" id="LZW-ps-Ei0"/>
+                                    <constraint firstItem="yWg-ke-ttB" firstAttribute="width" secondItem="Gfa-36-AyG" secondAttribute="width" id="ThX-wD-LTM"/>
+                                    <constraint firstItem="o3g-ZR-c9S" firstAttribute="height" secondItem="yWg-ke-ttB" secondAttribute="height" id="u4x-uh-dUM"/>
+                                    <constraint firstItem="zGp-ui-fWg" firstAttribute="width" secondItem="Gfa-36-AyG" secondAttribute="width" id="xOL-bG-D3G"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9tU-U3-wqv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gfa-36-AyG" firstAttribute="width" secondItem="9tU-U3-wqv" secondAttribute="width" multiplier="0.3" id="C72-cY-CLa"/>
+                            <constraint firstItem="tJD-4g-s7a" firstAttribute="leading" secondItem="9tU-U3-wqv" secondAttribute="leading" constant="16" id="Zar-Ta-DbV"/>
+                            <constraint firstItem="tJD-4g-s7a" firstAttribute="top" secondItem="9tU-U3-wqv" secondAttribute="top" id="aYd-F4-5p1"/>
+                            <constraint firstItem="9tU-U3-wqv" firstAttribute="bottom" secondItem="tJD-4g-s7a" secondAttribute="bottom" constant="16" id="psj-HT-v89"/>
+                            <constraint firstItem="9tU-U3-wqv" firstAttribute="trailing" secondItem="tJD-4g-s7a" secondAttribute="trailing" constant="16" id="yxe-bC-L8Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SSO-9a-I0M">
+                        <barButtonItem key="backBarButtonItem" title="Ингредиенты" id="pfX-xI-cbo"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outletCollection property="cookButtons" destination="Gfa-36-AyG" collectionClass="NSMutableArray" id="NQb-iu-xF2"/>
+                        <outletCollection property="cookButtons" destination="zGp-ui-fWg" collectionClass="NSMutableArray" id="teD-RG-dy1"/>
+                        <outletCollection property="cookButtons" destination="yWg-ke-ttB" collectionClass="NSMutableArray" id="PtB-W4-qFn"/>
+                        <outletCollection property="cookButtons" destination="o3g-ZR-c9S" collectionClass="NSMutableArray" id="C3M-Yv-Fc6"/>
+                        <outletCollection property="cookDescriptionLabels" destination="rg5-8b-yXL" collectionClass="NSMutableArray" id="VeQ-BB-UWB"/>
+                        <outletCollection property="cookDescriptionLabels" destination="wPB-jn-tt5" collectionClass="NSMutableArray" id="9w3-db-zCa"/>
+                        <outletCollection property="cookDescriptionLabels" destination="Mop-bs-3pa" collectionClass="NSMutableArray" id="06L-U8-xDj"/>
+                        <outletCollection property="cookDescriptionLabels" destination="ZBB-qD-EzX" collectionClass="NSMutableArray" id="U8D-My-XNC"/>
+                        <outletCollection property="cookNamesLabels" destination="Ddl-DQ-Mjf" collectionClass="NSMutableArray" id="8L0-kT-7Es"/>
+                        <outletCollection property="cookNamesLabels" destination="0Vo-0p-r9g" collectionClass="NSMutableArray" id="0oJ-eO-HQM"/>
+                        <outletCollection property="cookNamesLabels" destination="6Uz-ws-Zw8" collectionClass="NSMutableArray" id="YLi-Bw-Ttu"/>
+                        <outletCollection property="cookNamesLabels" destination="YcC-hu-gKv" collectionClass="NSMutableArray" id="Vzg-n4-Ej0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMA-1L-I8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11079.710144927538" y="53.571428571428569"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="mAr-q3-fmH">
+            <objects>
+                <viewController storyboardIdentifier="OrderVC" id="emv-92-1X2" customClass="OrderViewController" customModule="HomeCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPI-YT-lxT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш выбор:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-np-LIU">
+                                <rect key="frame" x="16" y="10" width="288" height="27"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-pJ-8m7">
+                                <rect key="frame" x="16" y="47" width="288" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Tt-pJ-8m7" secondAttribute="height" multiplier="15:10" id="T3s-Ob-R49"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Ym-avm">
+                                <rect key="frame" x="16" y="249" width="288" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-zM-lLQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                        <color key="textColor" name="TitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-c7-DmP">
+                                        <rect key="frame" x="0.0" y="42" width="288" height="23"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повар" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON0-AL-FOU">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="23"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDO-MW-Las">
+                                                <rect key="frame" x="60" y="0.0" width="228" height="23"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="SubtitleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-YJ-PSl">
+                                        <rect key="frame" x="0.0" y="80" width="288" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Желаемое количество" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBv-CQ-S5T">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="LVC-F5-LAP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="PIT-VO-L60">
+                                                <rect key="frame" x="200" y="0.0" width="88" height="59"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-kz-vUC">
+                                                        <rect key="frame" x="76.5" y="0.0" width="11.5" height="27"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                                        <color key="textColor" name="SubtitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-A7-hcu">
+                                                        <rect key="frame" x="0.0" y="27" width="88" height="32"/>
+                                                        <connections>
+                                                            <action selector="stepperPressed:" destination="emv-92-1X2" eventType="valueChanged" id="8dI-WM-f4K"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Y65-vg-rSd">
+                                        <rect key="frame" x="0.0" y="154" width="288" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итоговая стоимость:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-Yt-6FM">
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="46"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElV-5P-56f">
+                                                <rect key="frame" x="169" y="0.0" width="119" height="46"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                                <color key="textColor" name="SubtitleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pE4-BI-6C9">
+                                        <rect key="frame" x="0.0" y="215" width="288" height="35"/>
+                                        <color key="backgroundColor" name="FirstButtonColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Заказать">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="orderButtonTapped" destination="emv-92-1X2" eventType="touchUpInside" id="PLk-p3-9ut"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ut-Pr-OKF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="top" secondItem="bRp-np-LIU" secondAttribute="bottom" constant="10" id="5F2-TO-kxm"/>
+                            <constraint firstItem="bRp-np-LIU" firstAttribute="leading" secondItem="7ut-Pr-OKF" secondAttribute="leading" constant="16" id="GEE-ih-emw"/>
+                            <constraint firstItem="FPz-Ym-avm" firstAttribute="top" secondItem="5Tt-pJ-8m7" secondAttribute="bottom" constant="10" id="KHH-IC-gMn"/>
+                            <constraint firstItem="bRp-np-LIU" firstAttribute="top" secondItem="7ut-Pr-OKF" secondAttribute="top" constant="10" id="bRk-iR-Zps"/>
+                            <constraint firstAttribute="trailing" secondItem="FPz-Ym-avm" secondAttribute="trailing" constant="16" id="dj2-Vd-6g8"/>
+                            <constraint firstItem="7ut-Pr-OKF" firstAttribute="trailing" secondItem="5Tt-pJ-8m7" secondAttribute="trailing" constant="16" id="nKr-Vq-3c1"/>
+                            <constraint firstItem="5Tt-pJ-8m7" firstAttribute="leading" secondItem="7ut-Pr-OKF" secondAttribute="leading" constant="16" id="orj-Gz-KVR"/>
+                            <constraint firstItem="FPz-Ym-avm" firstAttribute="leading" secondItem="7ut-Pr-OKF" secondAttribute="leading" constant="16" id="s9M-v3-2Ex"/>
+                            <constraint firstItem="7ut-Pr-OKF" firstAttribute="trailing" secondItem="bRp-np-LIU" secondAttribute="trailing" constant="16" id="uT5-pa-Z4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NHN-Kz-pje"/>
+                    <connections>
+                        <outlet property="dishImageView" destination="5Tt-pJ-8m7" id="rBC-7M-qdP"/>
+                        <outlet property="dishTitleLabel" destination="wRC-zM-lLQ" id="Ytr-d7-q7i"/>
+                        <outlet property="quantityLabel" destination="XD1-kz-vUC" id="Dxf-1n-tCh"/>
+                        <outlet property="selectedCookLabel" destination="cDO-MW-Las" id="Piq-HF-fXQ"/>
+                        <outlet property="stepper" destination="JI7-A7-hcu" id="1Rt-PO-TGO"/>
+                        <outlet property="totalPriceLabel" destination="ElV-5P-56f" id="IVV-QW-XIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8z-fv-mUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11743.125" y="52.816901408450704"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="960" height="724"/>
+        <namedColor name="FirstButtonColor">
+            <color red="0.71799999475479126" green="0.18000000715255737" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SubtitleColor">
+            <color red="0.6940000057220459" green="0.39599999785423279" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.55299997329711914" green="0.54100000858306885" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.57599997520446777" green="0.13699999451637268" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
