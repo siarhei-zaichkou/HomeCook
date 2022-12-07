@@ -19,22 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-3u-UZs">
-                                <rect key="frame" x="16" y="120" width="288" height="148"/>
+                                <rect key="frame" x="16" y="120" width="288" height="46"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро  пожаловать  в  наш  ресторан  у  Вас  дома! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnA-xH-WI7" userLabel="Добро пожаловать в наш ресторан у Вас дома!">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
-                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="20"/>
-                                        <color key="textColor" name="SubtitleColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Наш профессиональный шеф-повар приготовит вашу любимую еду у Вас дома. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIg-pe-Ljr">
-                                        <rect key="frame" x="0.0" y="59" width="288" height="38"/>
-                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="14"/>
-                                        <color key="textColor" name="TextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите, блюдо какой кухни хотите  попробовать." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTi-hB-YDu">
-                                        <rect key="frame" x="0.0" y="102" width="288" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
                                         <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
                                         <color key="textColor" name="SubtitleColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,7 +30,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-kh-ExB">
-                                <rect key="frame" x="16" y="288" width="288" height="121"/>
+                                <rect key="frame" x="16" y="186" width="288" height="121"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-Tu-Npb">
                                         <rect key="frame" x="0.0" y="0.0" width="134" height="121"/>
@@ -89,7 +77,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-y8-Er9">
-                                <rect key="frame" x="16" y="429" width="288" height="119"/>
+                                <rect key="frame" x="16" y="327" width="288" height="119"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-9z-zzP">
                                         <rect key="frame" x="0.0" y="0.0" width="131" height="119"/>
@@ -178,69 +166,86 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-RB-9OD">
-                                <rect key="frame" x="16" y="117" width="288" height="316"/>
+                                <rect key="frame" x="16" y="117" width="288" height="303"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="85.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-5a-Yhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="81"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-eQ-HEG">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="0ar-eQ-HEG" secondAttribute="height" multiplier="150:100" id="2CK-Vu-7Yx"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
-                                                <rect key="frame" x="148" y="0.0" width="140" height="85.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-4W-CeZ">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button">
-                                                    <color key="titleColor" name="TextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="UFZ-pI-j1R"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
-                                        <rect key="frame" x="0.0" y="115.5" width="288" height="85"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-ky-Ltl">
+                                        <rect key="frame" x="0.0" y="111" width="288" height="81"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-zI-Kl3">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="85"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9ex-zI-Kl3" secondAttribute="height" multiplier="150:100" id="eQh-0X-MLI"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
-                                                <rect key="frame" x="148" y="0.0" width="140" height="85"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-pP-Ee1">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button">
-                                                    <color key="titleColor" name="TextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="N8P-mh-kBO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
-                                        <rect key="frame" x="0.0" y="230.5" width="288" height="85.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-lh-2Gb">
+                                        <rect key="frame" x="0.0" y="222" width="288" height="81"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-xF-pUL">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="81"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="u2p-xF-pUL" secondAttribute="height" multiplier="150:100" id="ECv-W6-yME"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
-                                                <rect key="frame" x="148" y="0.0" width="140" height="85.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zo-aPQ">
+                                                <rect key="frame" x="141.5" y="24" width="146.5" height="33"/>
+                                                <color key="backgroundColor" name="FirstButtonColor"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button">
-                                                    <color key="titleColor" name="TextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="dishButtonPressed:" destination="15s-jU-Vpw" eventType="touchUpInside" id="WH5-Pi-v7L"/>
                                                 </connections>
@@ -248,6 +253,10 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="4sh-pP-Ee1" firstAttribute="width" secondItem="yLI-zo-aPQ" secondAttribute="width" id="BF6-Ox-0eV"/>
+                                    <constraint firstItem="NwK-4W-CeZ" firstAttribute="width" secondItem="4sh-pP-Ee1" secondAttribute="width" id="rvC-ch-BW3"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите желаемое блюдо" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqW-DD-GTy">
                                 <rect key="frame" x="16" y="64" width="288" height="23"/>
@@ -261,7 +270,7 @@
                         <constraints>
                             <constraint firstItem="2W8-RB-9OD" firstAttribute="top" secondItem="qqW-DD-GTy" secondAttribute="bottom" constant="30" id="3Vg-KR-ga4"/>
                             <constraint firstItem="1ug-Gw-gME" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2W8-RB-9OD" secondAttribute="bottom" constant="16" id="Mfp-cQ-hel"/>
-                            <constraint firstItem="0ar-eQ-HEG" firstAttribute="width" secondItem="1ug-Gw-gME" secondAttribute="width" multiplier="0.4" id="Qcw-dw-qka"/>
+                            <constraint firstItem="0ar-eQ-HEG" firstAttribute="width" secondItem="1ug-Gw-gME" secondAttribute="width" multiplier="0.38" id="Qcw-dw-qka"/>
                             <constraint firstItem="qqW-DD-GTy" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="UQb-O9-lWJ"/>
                             <constraint firstItem="2W8-RB-9OD" firstAttribute="leading" secondItem="1ug-Gw-gME" secondAttribute="leading" constant="16" id="Xwd-Zk-JOe"/>
                             <constraint firstItem="1ug-Gw-gME" firstAttribute="trailing" secondItem="qqW-DD-GTy" secondAttribute="trailing" constant="16" id="eVk-ei-5So"/>
@@ -332,7 +341,7 @@
                                         <color key="textColor" name="TitleColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Наш профессиональный шеф-повар приготовит вашу любимую еду из ваших или наших продуктов у Вас дома. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-zk-stB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Наш профессиональный шеф-повар приготовит вашу любимую еду из Ваших или наших продуктов у Вас дома. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-zk-stB">
                                         <rect key="frame" x="0.0" y="47" width="288" height="81"/>
                                         <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="15"/>
                                         <color key="textColor" name="TextColor"/>
